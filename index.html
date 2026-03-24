@@ -25,15 +25,25 @@
         </p>
         <nav class="header__nav">
           <ul class="header__nav-links">
-            <li><a href="#" class="header__nav-link">Descargar CV</a></li>
             <li>
-              <a href="#" class="header__nav-link">Enlace a GitHub</a>
+              <a href="#" class="header__nav-link">
+                <span class="nav-text">Descargar CV</span>
+                <span class="nav-line"></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header__nav-link">
+                <span class="nav-text">Enlace a GitHub</span>
+                <span class="nav-line"></span>
+              </a>
             </li>
             <!--"hablemos" redirige a mandar un email-->
             <li>
-              <a href="mailto:erickoboae@gmail.com" class="header__nav-link"
-                >Hablemos</a
-              >
+              <a href="mailto:erickoboae@gmail.com" class="header__nav-link">
+                <span class="nav-text">Hablemos</span>
+                <span class="nav-line"></span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -80,8 +90,46 @@
           />
         </div>
       </section>
+      <section class="projects">
+        <h2 class="projects__title">Proyectos destacados</h2>
+        <div class="projects__grid">
+          <article class="project__card">
+            <div class="project__card-image">
+              <img src="./images/coffee_project_image.png" alt="Proyecto cafetería">
+                <div class="project__card-tech">
+                  <img src="./images/html_icon.png" alt="icono HTML">
+                  <img src="./images/css_icon.png" alt="icono CSS">
+                <div class="project-card__content">
+                  <h3 class="project-card__title">Página web de una cafetería</h3>
+                  <p class="project-card__description">
+                  Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional. Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando  GitHub Pages.
+                  </p>
+                <div class="project__card-links">
+                  <a href="#">Demo en vivo</a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </article>
+          <article class="project__card">
+            <div class="project__card-image">
+              <img src="./images/placeholder_project_image.png" alt="Proyecto código">
+              <div class="project__card-tech">
+                <img src="./images/javascript_icon.svg" alt="JavaScript">
+                <img src="./images/react_icon.png" alt="React">
+              </div>
+              <div class="project-card__content">
+                  <h3 class="project__card-title">Mi proyecto</h3>
+                  <p class="project__card-description">
+                  Descripción del proyecto
+                  </p>
+                <div class="project__card-links">
+                  <a href="#">Demo en vivo</a>
+                  <a href="#">GitHub</a>
+                </div>
+      </section>
     </main>
   </body>
-
   <footer class="footer"></footer>
 </html>

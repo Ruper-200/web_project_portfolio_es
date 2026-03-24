@@ -52,10 +52,25 @@
 .header__nav-link {
   color: #ffffff;
   text-decoration: none; /* Opcional: quita el subrayado */
+  position: relative; /* Necesario para el pseudo-elemento */
   transition: border-bottom 0.1s ease; /* Transición suave */
 }
-.header__nav-link:hover {
-  border-bottom: 2px solid blue;
+.nav-text:hover {
+  border-bottom: 3px solid #dc143c;
+  line-height: 1;
+}
+.nav-line::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Separación del texto */
+  left: 0;
+  width: 100%; /* Ancho completo del enlace */
+  height: 4px; /* Grosor de la línea */
+  background: linear-gradient(90deg, #8b00ff, #da70d6); /* Degradado púrpura */
+  border-radius: 2px; /* Bordes redondeados opcionales */
+}
+.nav-line:hover::after {
+  box-shadow: 0 0 0 4px #dc143c;
 }
 .header__picture {
   display: flex;
@@ -64,5 +79,27 @@
   height: 500px;
 }
 .tools__icons {
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly; /* Distribuye con espacio entre ellos */
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio fijo entre iconos (opcional) */
+  flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+}
+.tools__title {
+  font-family: "Archivo Black";
+  font-size: 40px;
+  padding-top: 40px;
+}
+.projects__title {
+  font-family: "Archivo Black";
+  font-size: 40px;
+  padding-top: 40px;
+}
+.project__grid {
+  display: flex;
+  flex-direction: row;
+}
+.project__card {
+  width: 590px;
+  height: 330px;
 }
