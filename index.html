@@ -1,26 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Portafolio Ruper Bonilla</title>
-    <link rel="preconnect" href="./fonts/ArchivoBlack-Regular.woff" />
-    <link rel="preconnect" href="./fonts/ArchivoBlack-Regular.woff2" />
-    <link rel="preconnect" href="./fonts/OpenSans-Bold.woff" />
-    <link rel="preconnect" href="./fonts/OpenSans-Bold.woff2" />
-    <link rel="preconnect" href="./fonts/OpenSans-Regular.woff" />
-    <link rel="preconnect" href="./fonts/OpenSans-Regular.woff2" />
-    <link rel="preconnect" href="./fonts/OpenSans-SemiBold.woff" />
-    <link rel="preconnect" href="./fonts/OpenSans-SemiBold.woff2" />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <h1 class="header__title">Ruper Bonilla</h1>
-        <h2 class="header__subtitle">
+        <p class="header__subtitle">
           Desarrollador Full-Stack Junior | TypeScript, React, Node.js
-        </h2>
+        </p>
         <p class="header__paragraph">
           Desarrollador web junior con experiencia práctica creando interfaces
           limpias y responsivas con HTML, CSS, JavaScript y React, así como
@@ -31,11 +23,64 @@
           aprendiendo, asumir nuevos retos y aprovechar oportunidades para
           crecer como desarrollador.
         </p>
-        <a href="#Download">Descargar CV</a>
-        <a href="#GitHub">Enlace a GitHub</a>
-        <a href="Contact">Hablemos</a>
+        <nav class="header__nav">
+          <ul class="header__nav-links">
+            <-- Hace falta la referencia--/>
+            <li><a href="" class="header__nav-link">Descargar CV</a></li>
+            <li>
+              <a href="https://github.com/Ruper-200" class="header__nav-link"
+                >Enlace a GitHub</a
+              >
+            </li>
+            <-- Hace falta la referencia--/>
+            <li><a href="" class="header__nav-link">Hablemos</a></li>
+          </ul>
+        </nav>
       </div>
-      <img src="./images/profile picture.jpeg" alt="Foto de perfil" />
+      <img
+        class="header__picture"
+        src="./images/profile picture.jpeg"
+        alt="Foto de perfil"
+      />
     </header>
+    <main class="main">
+      <section class="tools">
+        <h2 class="tools__title">Habilidades y herramientas</h2>
+        <div class="tools__icons">
+          <img
+            class="tools__icons-image"
+            src="./images/html_icon.png"
+            alt="Icono HTML5"
+          />
+          <img
+            class="tools__icons-image"
+            src="./images/css_icon.png"
+            alt="Icono CSS3"
+          />
+          <img
+            class="tools__icons-image"
+            src="./images/javascript_icon.svg"
+            alt="JavaScript"
+          />
+          <img
+            class="tools__icons-image"
+            src="./images/git_icon.png"
+            alt="Icono Git"
+          />
+          <img
+            class="tools__icons-image"
+            src="./images/github_icon.png"
+            alt="Icono GitHub"
+          />
+          <img
+            class="tools__icons-image"
+            src="./images/chatgpt_icon.png"
+            alt="Icono ChatGPT"
+          />
+        </div>
+      </section>
+    </main>
   </body>
+
+  <footer class="footer"></footer>
 </html>
