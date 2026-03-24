@@ -13,3 +13,56 @@
     url("./fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
 }
+.page {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.header__title {
+  font-family: "Archivo Black";
+  font-size: 72px;
+}
+.header__subtitle {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  opacity: 0.5;
+
+  .header__paragraph {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+  }
+}
+.header__container {
+  width: 66%;
+  max-width: 793px;
+  padding-right: 20px;
+}
+.header__nav-links {
+  list-style: none; /* Quita las viñetas */
+  display: flex; /* Coloca los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los enlaces */
+  margin: 0; /* Quita márgenes por defecto */
+  padding: 0; /* Quita padding por defecto */
+}
+.header__nav-link {
+  color: #ffffff;
+  text-decoration: none; /* Opcional: quita el subrayado */
+  transition: border-bottom 0.1s ease; /* Transición suave */
+}
+.header__nav-link:hover {
+  border-bottom: 2px solid blue;
+}
+.header__picture {
+  display: flex;
+  justify-content: start;
+  width: 387px;
+  height: 500px;
+}
+.tools__icons {
+  justify-content: space-evenly;
+}
