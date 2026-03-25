@@ -1,46 +1,49 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Portafolio Ruper Bonilla</title>
-  </head>
-  <body class="page">
-    <header class="header">
-      <div class="header__container">
-        <h1 class="header__title">Ruper Bonilla</h1>
-        <p class="header__subtitle">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Portafolio Ruper Bonilla</title>
+</head>
+
+<body class="page">
+  <main class="content">
+    <section class="profile">
+      <div class="profile__container">
+        <h1 class="profile__title">Ruper Bonilla</h1>
+        <p class="profile__subtitle">
           Desarrollador Full-Stack Junior | TypeScript, React, Node.js
         </p>
-        <p class="header__paragraph">
+        <p class="profile__paragraph">
           Desarrollador web junior con experiencia práctica creando interfaces
           limpias y responsivas con HTML, CSS, JavaScript y React, así como
           implementando lógica básica de back-end. Ha trabajado en proyectos
           formativos que siguen procesos reales de desarrollo, usando Git,
-          GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro
-          y resolver problemas de forma estructurada. Motivado por seguir
-          aprendiendo, asumir nuevos retos y aprovechar oportunidades para
-          crecer como desarrollador.
+          GitHub y Figma. Disfruta colaborar en equipo, mantener un código
+          claro y resolver problemas de forma estructurada. Motivado por
+          seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades
+          para crecer como desarrollador.
         </p>
-        <nav class="header__nav">
-          <ul class="header__nav-links">
+        <nav class="profile__nav">
+          <ul class="profile__nav-links">
             <li>
-              <a href="#" class="header__nav-link">
+              <a href="#" class="profile__nav-link">
                 <span class="nav-text">Descargar CV</span>
                 <span class="nav-line"></span>
               </a>
             </li>
 
             <li>
-              <a href="#" class="header__nav-link">
+              <a href="#" class="profile__nav-link">
                 <span class="nav-text">Enlace a GitHub</span>
                 <span class="nav-line"></span>
               </a>
             </li>
             <!--"hablemos" redirige a mandar un email-->
             <li>
-              <a href="mailto:erickoboae@gmail.com" class="header__nav-link">
+              <a href="mailto:erickoboae@gmail.com" class="profile__nav-link">
                 <span class="nav-text">Hablemos</span>
                 <span class="nav-line"></span>
               </a>
@@ -48,88 +51,72 @@
           </ul>
         </nav>
       </div>
-      <img
-        class="header__picture"
-        src="./images/profile picture.jpeg"
-        alt="Foto de perfil"
-      />
-    </header>
-    <main class="main">
-      <section class="tools">
-        <h2 class="tools__title">Habilidades y herramientas</h2>
-        <div class="tools__icons">
-          <img
-            class="tools__icons-image"
-            src="./images/html_icon.png"
-            alt="Icono HTML5"
-          />
-          <img
-            class="tools__icons-image"
-            src="./images/css_icon.png"
-            alt="Icono CSS3"
-          />
-          <img
-            class="tools__icons-image"
-            src="./images/javascript_icon.svg"
-            alt="JavaScript"
-          />
-          <img
-            class="tools__icons-image"
-            src="./images/git_icon.png"
-            alt="Icono Git"
-          />
-          <img
-            class="tools__icons-image"
-            src="./images/github_icon.png"
-            alt="Icono GitHub"
-          />
-          <img
-            class="tools__icons-image"
-            src="./images/chatgpt_icon.png"
-            alt="Icono ChatGPT"
-          />
-        </div>
-      </section>
-      <section class="projects">
-        <h2 class="projects__title">Proyectos destacados</h2>
-        <div class="projects__grid">
-          <article class="project__card">
-            <div class="project__card-image">
-              <img src="./images/coffee_project_image.png" alt="Proyecto cafetería">
-                <div class="project__card-tech">
-                  <img src="./images/html_icon.png" alt="icono HTML">
-                  <img src="./images/css_icon.png" alt="icono CSS">
-                <div class="project-card__content">
-                  <h3 class="project-card__title">Página web de una cafetería</h3>
-                  <p class="project-card__description">
-                  Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional. Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando  GitHub Pages.
-                  </p>
-                <div class="project__card-links">
-                  <a href="#">Demo en vivo</a>
-                  <a href="#">GitHub</a>
-                </div>
-              </div>
-              </div>
+      <img class="profile__picture" src="./images/profile picture.jpeg" alt="Foto de perfil" />
+    </section>
+    <section class="tools">
+      <h2 class="tools__title">Habilidades y herramientas</h2>
+      <div class="tools__icons">
+        <img class="tools__icons-image" src="./images/html_icon.png" alt="Icono HTML5" />
+        <img class="tools__icons-image" src="./images/css_icon.png" alt="Icono CSS3" />
+        <img class="tools__icons-image" src="./images/javascript_icon.svg" alt="JavaScript" />
+        <img class="tools__icons-image" src="./images/git_icon.png" alt="Icono Git" />
+        <img class="tools__icons-image" src="./images/github_icon.png" alt="Icono GitHub" />
+        <img class="tools__icons-image" src="./images/chatgpt_icon.png" alt="Icono ChatGPT" />
+      </div>
+    </section>
+    <section class="projects">
+      <h2 class="projects__title">Proyectos destacados</h2>
+      <div class="projects__grid">
+        <article class="project__card">
+          <div class="project__card-image">
+            <img src="./images/coffee_project_image.png" alt="Proyecto cafetería" />
+            <div class="project__card-tech">
+              <img src="./images/html_icon.png" alt="icono HTML" />
+              <img src="./images/css_icon.png" alt="icono CSS" />
             </div>
-          </article>
-          <article class="project__card">
-            <div class="project__card-image">
-              <img src="./images/placeholder_project_image.png" alt="Proyecto código">
-              <div class="project__card-tech">
-                <img src="./images/javascript_icon.svg" alt="JavaScript">
-                <img src="./images/react_icon.png" alt="React">
-              </div>
-              <div class="project-card__content">
-                  <h3 class="project__card-title">Mi proyecto</h3>
-                  <p class="project__card-description">
-                  Descripción del proyecto
-                  </p>
-                <div class="project__card-links">
-                  <a href="#">Demo en vivo</a>
-                  <a href="#">GitHub</a>
-                </div>
-      </section>
-    </main>
-  </body>
+          </div>
+          <div class="project__card-content">
+            <h3 class="project__card-title">
+              Página web de una cafetería
+            </h3>
+            <p class="project__card-description">
+              Desarrollo de una landing page responsiva para una cafetería
+              siguiendo un brief de diseño. Incluye estructura semántica,
+              maquetación con Flexbox, creación de secciones nuevas y un
+              formulario de contacto funcional. Logro: Implementé desde
+              cero el diseño completo de la página, organicé el proyecto
+              con buenas prácticas y publiqué la versión final utilizando
+              GitHub Pages.
+            </p>
+            <div class="project__card-links">
+              <a class="p__card-links" href="#">Demo en vivo</a>
+              <a class="p__card-links p__card-links_white" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project__card">
+          <div class="project__card-image">
+            <img src="./images/placeholder_project_image.png" alt="Proyecto código" />
+            <div class="project__card-tech">
+              <img src="./images/javascript_icon.svg" alt="JavaScript" />
+              <img src="./images/react_icon.png" alt="React" />
+            </div>
+          </div>
+          <div class="project__card-content">
+            <h3 class="project__card-title">Mi proyecto</h3>
+            <p class="project__card-description">
+              Descripción del proyecto
+            </p>
+            <div class="project__card-links">
+              <a class="p__card-links" href="#">Demo en vivo</a>
+              <a class="p__card-links p__card-links_white" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
   <footer class="footer"></footer>
+</body>
+
 </html>

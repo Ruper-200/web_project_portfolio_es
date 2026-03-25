@@ -16,40 +16,47 @@
 .page {
   background-color: #1e1e1e;
   color: #ffffff;
+  padding-top: 40px;
+  padding-right: 120px;
+  padding-left: 120px;
 }
-.header {
+.content {
+  max-width: 1200px; /* Controla el ancho máximo */
+  margin: 0 auto; /* Centra el contenido */
+}
+.profile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.header__title {
+.profile__title {
   font-family: "Archivo Black";
   font-size: 72px;
 }
-.header__subtitle {
-  font-family: OpenSans-Regular;
+.profile__subtitle {
+  font-family: "Open Sans";
   font-size: 18px;
   opacity: 0.5;
-
-  .header__paragraph {
-    font-family: OpenSans-Regular;
-    font-size: 18px;
-  }
 }
-.header__container {
+.profile__paragraph {
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.profile__container {
   width: 66%;
   max-width: 793px;
   padding-right: 20px;
 }
-.header__nav-links {
+.profile__nav-links {
   list-style: none; /* Quita las viñetas */
   display: flex; /* Coloca los elementos horizontalmente */
   gap: 20px; /* Espacio entre los enlaces */
   margin: 0; /* Quita márgenes por defecto */
   padding: 0; /* Quita padding por defecto */
 }
-.header__nav-link {
+.profile__nav-link {
   color: #ffffff;
   text-decoration: none; /* Opcional: quita el subrayado */
   position: relative; /* Necesario para el pseudo-elemento */
@@ -72,7 +79,7 @@
 .nav-line:hover::after {
   box-shadow: 0 0 0 4px #dc143c;
 }
-.header__picture {
+.profile__picture {
   display: flex;
   justify-content: start;
   width: 387px;
@@ -80,10 +87,11 @@
 }
 .tools__icons {
   display: flex;
-  justify-content: space-evenly; /* Distribuye con espacio entre ellos */
+  justify-content: space-between; /* Distribuye con espacio entre ellos */
   align-items: center; /* Centra verticalmente */
   gap: 20px; /* Espacio fijo entre iconos (opcional) */
   flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+  padding-top: 50px;
 }
 .tools__title {
   font-family: "Archivo Black";
@@ -95,11 +103,90 @@
   font-size: 40px;
   padding-top: 40px;
 }
-.project__grid {
+.projects__grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Fuerza dirección horizontal */
+  gap: 10px;
+  margin-top: 40px;
+  background-color: transparent;
 }
+
 .project__card {
-  width: 590px;
+  flex: 1; /* Cada tarjeta ocupa el mismo espacio */
+  height: 670px; /* Altura fija */
+  position: relative; /* Para posicionar elementos internos */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que el contenido se salga */
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+}
+.project__card-image {
   height: 330px;
+  position: relative;
+  overflow: hidden;
+}
+.project__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project__card-tech {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  gap: 8px;
+}
+.project__card-tech img {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 4px;
+}
+.project__card-content {
+  height: 340px;
+  background-color: #2a2a2a;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project__card-title {
+  font-family: "Archivo Black";
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+.project__card-description {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #cccccc;
+  flex-grow: 1;
+}
+.project__card-links {
+  display: flex;
+  gap: 20px;
+}
+.project__card-links {
+  color: #6366f1;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.p__card-links_white {
+  color: #ffffff;
+  opacity: 0.6;
+}
+.project__card-links a:hover {
+  color: #8b5cf6;
+}
+.p__card-links_white :visited {
+  color: white;
 }
