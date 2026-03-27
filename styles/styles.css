@@ -1,24 +1,39 @@
 @font-face {
   font-family: "Archivo Black";
   src:
-    url("./fonts/ArchivoBlack-Regular.woff2") format("woff2"),
-    url("./fonts/ArchivoBlack-Regular.woff") format("woff");
+    url("/fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("/fonts/ArchivoBlack-Regular.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Open Sans";
   src:
-    url("./fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("./fonts/OpenSans-Regular.woff") format("woff");
+    url("/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("/fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src:
+    url("/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src:
+    url("/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
 .page {
   background-color: #1e1e1e;
   color: #ffffff;
   padding-top: 40px;
-  padding-right: 120px;
-  padding-left: 120px;
+  padding-right: 8.33%;
+  padding-left: 8.33%;
 }
 .content {
   max-width: 1200px; /* Controla el ancho máximo */
@@ -33,38 +48,40 @@
 }
 .profile__light {
   position: absolute;
-  width: 400px;
+  width: 33.33%;
   height: 400px;
   background: radial-gradient(
     circle,
-    rgba(139, 0, 255, 0.3) 0%,
-    rgba(139, 0, 255, 0.1) 40%,
+    rgba(139, 0, 255, 0.4) 10%,
+    rgba(139, 0, 255, 0.2) 40%,
     transparent 70%
   );
   border-radius: 50%;
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
+  top: 40%;
+  right: 8%;
   z-index: -1;
 }
 .profile__title {
   font-family: "Archivo Black";
   font-size: 72px;
+  line-height: 1.1;
 }
 .profile__subtitle {
   font-family: "Open Sans";
   font-size: 18px;
   opacity: 0.5;
+  line-height: 1.4;
 }
 .profile__paragraph {
   font-family: "Open Sans";
   font-size: 18px;
+  line-height: 1.6;
 }
 
 .profile__container {
   width: 66%;
   max-width: 793px;
-  padding-right: 20px;
+  padding-right: 1.67%;
 }
 .profile__nav-links {
   list-style: none; /* Quita las viñetas */
@@ -97,10 +114,11 @@
   box-shadow: 0 0 0 4px #dc143c;
 }
 .profile__picture {
-  display: flex;
-  justify-content: start;
-  width: 387px;
+  object-fit: cover;
+  object-position: center;
+  width: 32.25%;
   height: 500px;
+  border-radius: 8px;
 }
 .tools__icons {
   display: flex;
@@ -184,18 +202,32 @@
   color: #cccccc;
   flex-grow: 1;
 }
-.project__card-links {
+.project__links-container {
   display: flex;
+  flex-direction: row;
   gap: 20px;
+  padding: 1px 0px;
 }
 .project__card-links {
+  width: 132px;
+  height: 22px;
   color: #6d6dff;
   text-decoration: none;
   font-family: "Open Sans";
   font-size: 16px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+}
+.project__ard-links_blue {
+  color: 3#6d6dff;
+}
+.project__card-links_white {
+  color: #ffffff;
+}
+.project__card-links img {
+  width: 20px;
+  height: 20px;
 }
 .p__card-links_white {
   color: #ffffff;
@@ -204,7 +236,7 @@
 .project__card-links a:hover {
   color: #8b5cf6;
 }
-.p__card-links_white :visited {
+.p__card-links_white:visited {
   color: white;
 }
 .footer {
@@ -218,7 +250,7 @@
 .footer__title {
   margin: 0;
   font-family: "Archivo Black";
-  font-size: 28px;
+  font-size: 40px;
 }
 .footer::before {
   content: "";
@@ -244,9 +276,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  column-gap: 40px;
 }
-.footer__social-icons a:hover {
+.footer__social a:hover {
   transform: translateY(-5px);
   opacity: 0.6;
 }
