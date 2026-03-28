@@ -30,22 +30,17 @@
 
 .page {
   background-color: #111111;
-  background-image:
-    radial-gradient(
-      900px 900px at calc(50% + 400px) 20%,
-      rgba(109, 109, 255, 0.4),
-      transparent 40%
-    ),
-    radial-gradient(
-      900px 900px at 50% 90%,
-      rgba(109, 109, 255, 0.4),
-      transparent 40%
-    );
+  background-image: radial-gradient(
+    900px 900px at 50% 90%,
+    rgba(109, 109, 255, 0.4),
+    transparent 40%
+  );
   background-repeat: no-repeat;
   color: #ffffff;
   padding-top: 40px;
   padding-right: 8.33%;
   padding-left: 8.33%;
+  padding-bottom: 100px;
 }
 .content {
   max-width: 1280px;
@@ -53,20 +48,20 @@
 }
 
 .profile {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 350px;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 80px;
+  grid-template-columns: 1fr 387px;
+  align-items: start;
+  gap: 48px;
 }
 .profile__light {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 900px;
+  height: 900px;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-30%, -50%);
+  top: 240px;
+  right: 207px;
+  transform: translate(50%, -60%);
 
   background: radial-gradient(
     circle,
@@ -76,12 +71,23 @@
   );
 
   filter: blur(100px);
-  z-index: 1;
+  z-index: -1;
+}
+.profile__picture {
+  width: 100%;
+  aspect-ratio: 387/500;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+.profile__image-wrapper {
+  width: 100%;
 }
 .profile__title {
   font-family: "Archivo Black";
   font-size: 72px;
-  line-height: 1.1;
+  /* line-height: 1.1; */
 }
 .profile__subtitle {
   font-family: "Open Sans";
@@ -125,10 +131,6 @@
 .profile__nav-link:hover::after {
   opacity: 0.5;
 }
-.profile__image-wrapper {
-  position: relative;
-  width: 350px;
-}
 .nav-text:hover {
   opacity: 0.5;
 }
@@ -145,14 +147,7 @@
 .nav-line:hover::after {
   opacity: 0.5;
 }
-.profile__picture {
-  width: 100%;
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
-}
+
 .tools__icons {
   display: flex;
   justify-content: space-between;
@@ -169,7 +164,7 @@
 .projects__title {
   font-family: "Archivo Black";
   font-size: 40px;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 .projects__grid {
   display: grid;
@@ -237,7 +232,6 @@
 }
 .project__links-container {
   display: flex;
-  flex-direction: row;
   gap: 20px;
   padding: 1px 0px;
 }
@@ -251,6 +245,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  line-height: normal;
 }
 
 .project__card-links img {
@@ -262,7 +257,7 @@
 }
 .footer {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,7 +278,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 100px;
 }
 .fotter__social img {
   object-fit: contain;
@@ -309,28 +303,23 @@
     padding-right: 5%;
     padding-left: 5%;
   }
-
+  .profile__title {
+    font-size: 58px;
+  }
   .profile {
     grid-template-columns: 1fr 280px;
-    align-items: start;
+    align-items: flex-start;
     gap: 40px;
   }
-
-  .profile__container {
-    order: 1;
-  }
   .profile__image-wrapper {
-    order: 2;
     width: 100%;
   }
   .profile__picture {
     width: 100%;
   }
 
-  .profile__light {
-    width: 450px;
-    height: 450px;
-    transform: translate(-50%, -50%);
+  .projects__title {
+    padding-top: 80px;
   }
   .projects__grid {
     grid-template-columns: 1fr;
@@ -349,7 +338,9 @@
 
   /* PROFILE */
   .profile {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
   }
 
@@ -370,8 +361,6 @@
     font-size: 16px;
   }
   .profile__light {
-    width: 300px;
-    height: 300px;
     filter: blur(80px);
   }
 
@@ -388,10 +377,12 @@
   /* TOOLS */
   .tools__icons {
     justify-content: flex-start;
+    gap: 30px;
   }
 
   /* PROJECTS */
   .projects__title {
+    padding-top: 59px;
     font-size: 28px;
   }
 
@@ -401,7 +392,7 @@
   }
 
   .project__card {
-    height: auto; /* 🔥 CLAVE */
+    height: auto;
   }
 
   .project__card-image {
@@ -422,7 +413,6 @@
   }
 
   .project__links-container {
-    flex-direction: column;
     align-items: flex-start;
   }
 
