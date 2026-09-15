@@ -1,16 +1,18 @@
 # Portafolio de Ruperto Bonilla Arceo
-
 Portafolio profesional orientado a oportunidades como **Junior Front-End Developer / Junior Web Developer**.
 
 Este sitio reúne mis principales proyectos, habilidades técnicas y formación actual en desarrollo web. El portafolio comenzó como un proyecto de maquetación y ha evolucionado junto con mi formación para convertirse en una presentación de mi trabajo y progreso como desarrollador Front-End.
 
 ### 🔗 Demo
-
 **[Ver portafolio publicado](https://ruper-200.github.io/web_project_portfolio_es/)**
 
 
-## Sobre el proyecto
+## Vista del portafolio
+[![Vista del portafolio de Ruperto Bonilla Arceo](./images/portfolio-preview.png)](https://ruper-200.github.io/web_project_portfolio_es/)
 
+> Haz clic en la imagen para visitar el portafolio.
+
+## Sobre el proyecto
 El objetivo de este portafolio es centralizar mis proyectos y proporcionar una forma sencilla de conocer mi trabajo, las tecnologías que utilizo actualmente y mi evolución como desarrollador.
 
 El sitio fue construido con HTML5 y CSS3, aplicando diseño responsivo, estructura semántica y principios básicos de accesibilidad.
@@ -21,9 +23,9 @@ Actualmente funciona también como punto de conexión hacia mis proyectos desple
 ## Proyectos destacados
 
 ### Around The U.S.
+Aplicación Front-End interactiva desarrollada con **TypeScript**, **Programación Orientada a Objetos** e integración con una 
 
-Aplicación Front-End interactiva desarrollada con **TypeScript**, **Programación Orientada a Objetos** e integración con una **API REST**.
-
+**API REST**.
 Permite gestionar información de usuario, crear y eliminar tarjetas, administrar likes, actualizar el avatar y persistir los cambios mediante comunicación con un servidor.
 
 **Tecnologías principales:**  
@@ -33,9 +35,7 @@ TypeScript · JavaScript · POO · REST API · Fetch API · async/await · HTML5
 
 
 ### Página de una cafetería
-
 Proyecto de maquetación web enfocado en la construcción de una interfaz utilizando HTML y CSS.
-
 Incluye diseño responsivo y un formulario con validación nativa del navegador.
 
 **Tecnologías principales:**  
@@ -45,11 +45,9 @@ HTML5 · CSS3 · Diseño responsivo
 
 
 ## Tecnologías del portafolio
-
 El sitio está desarrollado como un proyecto estático y no requiere instalación de dependencias ni proceso de compilación.
 
 Tecnologías y técnicas utilizadas:
-
 - HTML5 semántico.
 - CSS3.
 - CSS Grid.
@@ -65,11 +63,9 @@ Tecnologías y técnicas utilizadas:
 
 
 ## Responsive y accesibilidad
-
 El diseño está preparado para adaptarse a diferentes tamaños de pantalla mediante CSS Grid, Flexbox y media queries.
 
 Entre las consideraciones implementadas se encuentran:
-
 - Adaptación de la interfaz para escritorio, tablet y dispositivos móviles.
 - HTML semántico.
 - Jerarquía estructurada de encabezados.
@@ -83,7 +79,6 @@ Entre las consideraciones implementadas se encuentran:
 
 
 ## Estructura del proyecto
-
 ```text
 web_project_portfolio_es/
 │
