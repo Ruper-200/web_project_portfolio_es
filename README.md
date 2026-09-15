@@ -57,5 +57,5 @@ Mantener las descripciones respaldadas por los proyectos y comprobar las demos a
 **Ruperto Bonilla Arceo** · Cancún, México
 
 - [GitHub](https://github.com/Ruper-200)
-- [LinkedIn](https://www.linkedin.com/in/ruperto-bonilla-0a6955374)
+- [LinkedIn](https://www.linkedin.com/in/erick-ruperto-bonilla-arceo/)
 - [Email](mailto:erickoboae@gmail.com)
